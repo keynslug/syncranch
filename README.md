@@ -1,7 +1,15 @@
-Ranch
-=====
+SyncRanch
+=========
 
 Ranch is a socket acceptor pool for TCP protocols.
+
+SyncRanch is the Ranch that allows you to turn off asynchronous accepts or 
+asynchronous protocol handling. Or both altogether. Feature is UNSAFE but it
+diminishes process spawning burden and thus gives a notable performance
+gain in handful of use cases.
+
+If you prefer guaranteed fault tolerance consider original 
+(ranch)[https://github.com/extend/ranch].
 
 Goals
 -----
